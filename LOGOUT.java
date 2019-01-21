@@ -10,6 +10,7 @@ import java.util.*;
 import java.sql.*;
 import javax.servlet.http.HttpSession;
 import db_handler_package.DB_HANDLER;
+import java.lang.*;
 
 public class LOGOUT extends HttpServlet
 {
