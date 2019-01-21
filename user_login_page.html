@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <style>
+            .bodystyle
+            {
+                background-image:linear-gradient(to bottom,#ff1d8e,aqua);
+                -webkit-background-size:cover;
+                -moz-background-size:cover;
+                -moz-background-size:cover;
+                background-size:cover;   
+               background-repeat:no-repeat; 
+            
+            }
+            
+            .tablestyle
+            {
+                margin-top: 10%;
+            }
+
+            .textfieldstyle
+            {
+                border: 0;
+            }
+
+            .buttonstyle:hover
+            {
+                background-image: linear-gradient(to right,#ff1d8e,aqua);/*url("../images/login_button.jpg");*/ 
+                transition: 1s;
+            }
+            
+            .buttonstyle
+            {
+                background-image: linear-gradient(to right,aqua,#ff1d8e);/*url("../images/login_button.jpg");*/ 
+                background-size: 300px 50px ; 
+                background-color: white;
+                height: 50px;
+                border-radius: 90px;
+                width: 300px;
+                border:0;
+                transition: 1s;
+            }
+            .innerdivstyle
+            {
+                background-color: white;
+                height: 50px;
+                border-radius: 90px;
+                width: 300px;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                box-shadow: 0 4px 6px 0 rgbs(0,0,0,0.2), 0px 6px 8px 0 rgba(0,0,0,3);
+            }
+            .hrefstyle:hover
+            {
+                text-decoration: none;
+                color: aqua;
+                transition: 0.5s;
+            }
+            .hrefstyle
+            {
+                transition: 0.7s;
+                text-decoration: none;
+                color: #ff1d8e;
+            }
+            /*login_button*/
+        </style>
+    </head>
+    <body  class="bodystyle">
+        
+        <center>
+        <table border="0" align="center" class="tablestyle">
+            <tr>
+                <td>
+                        <div style="background-color:#FFE1FF; height:500px; justify-content: center;align-items: center;display: flex; border-radius: 8px;">
+                                <form action="http://localhost:8080/Site_ud/session_handler" method="post">
+                            <table border="0" cellpadding="20">
+                                <tr>
+                                    <th>
+                                            <center><img src="../images/logo.jpg" height="80px" width="80px" style='border-radius: 100%'></center> 
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="innerdivstyle">
+                                                <img src="../images/login_page_username.png" height="20px" width="20px">&nbsp;&nbsp;&nbsp; 
+                                                <input type="text" name="username" placeholder="Username" class="textfieldstyle">
+            
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td >
+                                        <div class="innerdivstyle">
+                                                <img src="../images/password.png" height="20px" width="20px" style="vertical-align: middle;border-radius:100%" >&nbsp;&nbsp;&nbsp;
+                                                <input type="password"  name="userpassword" placeholder="Password" style="vertical-align: middle;" class="textfieldstyle">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            
+                                        <center>
+                                        <input type="submit" class="buttonstyle" value="Login" style="color:white;font-size: 20px;">
+                                   
+                                    </center>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href='../htmls/login_page.html'  class="hrefstyle"><i><b><font Style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Sign Up</font> </b></i></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                        </div> 
+                </td>
+            </tr>
+        </table>
+    
+    </body>
+</html>

@@ -1,0 +1,75 @@
+<html>
+<head>
+	<script src="jquery.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".closebtn").click(function(){
+				$(".alert").slideUp(500);
+			});
+
+		});
+	</script>
+<style>
+.alert
+{
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+text-align: center;
+border:0;
+border-radius: 10px;
+height:230px;
+width:230px;
+padding:20 px;
+background-color:#E0FFFF;
+color:black;
+margin-bottom:15px;
+}
+.closebtn
+{
+margin-left:15px;
+color:black;
+font-weight:bold;
+float:right;
+font-size:40px;
+line-height:40px;
+cursor:pointer;
+transition:0.4s;
+}
+
+.closebtn:hover
+{
+color:black;
+}
+</style>
+</head>
+<body>
+<center>
+	
+<table style="text-align: center;vertical-align: auto;margin-top: 200px" border="0">
+	<tr>
+		<td>
+				<div class='alert'>
+						<span class='closebtn' > &times;&nbsp;&nbsp;</span>
+						<center><table border='0' style='width:180px;text-align: center;' align='center'>
+							
+							<tr>
+								<td>
+									<br><br>
+										<font style='font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;font-weight: bold;'>Item Added To Cart</font>
+								</td>
+							</tr>
+							<tr>
+									<td>
+										<br><img src='../images/accept.png' height='20px' width='20px' style="border-radius: 100%">
+									</td>
+								</tr>
+					
+		</td>
+	</tr>
+	</table>
+</center>
+	
+</div>
+</table>
+</center>
+</body>
+</html>

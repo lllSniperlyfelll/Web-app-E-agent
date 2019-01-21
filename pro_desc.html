@@ -1,0 +1,103 @@
+
+<html>
+    <head>
+
+        <!--<link rel="stylesheet" href="reset.css">-->
+            <link rel="stylesheet" href="css/bootstrap.css">
+            <script src="jquery.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $("#logo_image").hide();
+                    $("#add_bar").hide();
+                    $("#e_agent_logo").hide();
+                    $("#proverb").hide();
+                    $("#underline_image").hide();
+                   
+
+                    $("#body").mouseover(function(){
+                       
+                        $("#e_agent_logo").slideDown(1000);
+                        
+                    });
+                });
+            </script>
+            <script>
+                $(document).ready(function(){
+                  $("#body").mouseover(function(){
+                        $("#proverb").slideDown(1000);
+                        $("#underline_image").slideDown(1000);
+                    });
+                });
+            </script>
+            <script>
+                $(document).ready(function(){
+                    $("#body").mouseover(function(){
+                        $("#logo_image").fadeIn(2000);
+                        $("#add_bar").fadeIn(2000);
+                    });
+                    
+
+                });
+            </script>
+        <style>
+            .heading {color:crimson; size:12; text-align: center;}
+            a {text-decoration:none; color:black; font-size: 12;}
+            .content { background-color: white; box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 8px 0 rgba(0,0,0,0.17);}
+        </style>
+    </head>
+    <body id="body">
+            
+            <div class="jumbotron" id="test" style="width:100%;height:400px;">
+                    <center><img src="../images/logo.jpg" height="150px" width="150px" style="border-radius: 100%" id="e_agent_logo"></center>
+            
+                    <b><center><font face="Copperplate Gothic Bold" size="6" id="proverb"><b>Your First Step To Your Dream Home</b></font></center>
+                    <div ><center><img src="../images/underline.png" height="60px" width="700px" id="underline_image"></center></div>
+                    </div><br><br><br>
+                    
+            <table border='0' align='center'>
+                <tr>
+                    <td><img src="..\images\gps_logo.png" height="60px" width="60px" id="logo_image"><br></td>
+                    <td><div style="font-size: 30px;height:39px" ><font id="add_bar">Building Location,taluka,district</font></div><br></td>
+                </tr>
+            </table>
+        <br><br>
+        <table border="0" align='center'>
+            <tr><td><center><img src='../images/flate2.jpg' width='900px' height='500px' ></center></td></tr>
+        </table>
+
+        <br><br>
+        <div class='content'>
+        <table cellspacing="10" cellpadding="10"  align="center" width='1000px' border="2">
+                <div class='heading'><tr><td  colspan="2"><strong><a href='#'>ROOMS</a></strong><hr color='blue' height='30px'></td></tr></div>
+                <tr><td><img src="../images/accept.png" width='15px' height='15px'> Bedrooms  :</td><td> 3 *(area)</td></tr>
+                <tr><td><img src="../images/accept.png" width='15px' height='15px'> Hall :</td><td>  (Area of hall)</td></tr>
+                <tr><td><img src="../images/accept.png" width='15px' height='15px'> Kitchen :</td><td>  (Area of Kitchen)</td></tr>
+                <tr><td><img src="../images/accept.png" width='15px' height='15px'> Bathroom & Toilet :<br></td><td>  3*(Combined/not)<br></td></tr> 
+
+                <div id='heading'><tr><td  colspan="2"><strong><a href='#'>BUILDING INFO</a></strong><hr color='blue' height='20px'></td></tr></div>
+                <tr><td><img src="../images/accept.png" width='15px' height='15px'> Building Since  :</td><td> 2009</td></tr>
+                <tr><td><img src="../images/accept.png" width='15px' height='15px'> Location :</td><td> C-wing, 3rd floor, Room no.304</td></tr>
+                <tr><td><img src="../images/accept.png" width='15px' height='15px'> Land registered  :</td><td>in name of :  Mr.xyz</td></tr>
+
+                <div id='heading'><tr><td  colspan="2"><strong><a href='#'>NEARBY</a></strong><hr color='blue' height='20px'></td></tr></div>
+                <tr>
+                    <td><img src="../images/accept.png" width='15px' height='15px'> School</td>
+                    <td><img src="../images/accept.png" width='15px' height='15px'> Hospital & medical shop</td>
+                </tr>
+                <tr>
+                    <td><img src="../images/accept.png" width='15px' height='15px'> Grocery shops & Dairy</td>
+                    <td><img src="../images/accept.png" width='15px' height='15px'> kopri Bus Stop</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <br><br><br><br>
+                        <center>
+                        <button style= 'border-bottom-right-radius: 30px;border-radius: 30px; padding: 19px 290px;z-index:100000;border:none; background-image:linear-gradient(to right,aqua,#ff1d8e);color:white;font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif; outline:0;' value="imgl;nk" id="addtocartbtn1">Explore</button>
+                         </center>
+                        <br><br><br><br>
+                    </td>
+                </tr>
+        </table>
+        </div>
+    </body>
+</html>

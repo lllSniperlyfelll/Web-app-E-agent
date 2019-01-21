@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <script>
+            var i = 0,c1=0,c2=0,c3=0;
+            var txt = 'E Agent was created with an intention to revolutionize the old real estate market of buying and renting homes to an new modern way E Agent uses modern and optimised way to interact with user and let them to find their Dream home with ease ';
+            var speed = 50;
+            function typeWriter() 
+            {
+                 if (i < txt.length)
+                 {
+                        document.getElementById("type_here").innerHTML += txt.charAt(i);
+                        i++;
+                        if(i==59 || i==119 || i==172)
+                        { document.getElementById("type_here").innerHTML+="<br>";}
+                        setTimeout(typeWriter, speed);
+                 }
+            }
+            function disp_role(x)
+            {
+                if(x==1 && c1==0)
+                {
+                    document.getElementById('id1').innerHTML+='(Design & html)';
+                    c1++;
+                }
+                else if(x==2 && c2==0)
+                {
+                    document.getElementById('id2').innerHTML+='(Back_End)';
+                    c2++;
+                }
+                else if(x==3 && c3==0)
+                {
+                    document.getElementById('id3').innerHTML+='(Front_End)';
+                    c3++;
+                }
+            }
+        </script>
+        <style>
+            .tab
+            {
+                background-image: linear-gradient(to right,aqua,#ff1d8e);/*url("images/login_button.jpg");*/
+                margin-top: 50px;
+                height:70%; width: 70%;
+                padding: 50px;
+                background-color:grey;
+                border-radius:20px;
+                border-style: solid;
+                border-color: gold;
+                border-width: medium;
+            }
+            .mem1
+            {
+                transition: 1s;
+                font-family: fantasy;
+                font-size: 25;
+                color:white;
+                overflow:hidden;
+                border-radius:7px 7px 7px 7px;
+                border-style: solid;    border-color:cyan;
+                padding:20px;
+            }
+            .mem1:hover
+            {
+                transition: 1s;
+                font-family: fantasy;
+                font-size: 35;
+                color:black;
+                overflow:hidden;
+                background-color: gold;
+                border-radius:7px 7px 7px 7px;border-style: none;
+                padding:20px;
+            }
+            .mem2
+            {
+                transition: 1s;
+                font-family: fantasy;
+                font-size: 25;
+                color:white;
+                overflow:hidden;
+                border-color:cyan; border-style: solid; 
+                border-radius:7px 7px 7px 7px;
+                padding:20px;
+            }
+            .mem2:hover
+            {
+                transition: 1s;
+                font-family: fantasy;
+                font-size: 35;
+                color:black;
+                overflow:hidden;
+                background-color:#6633ff;
+                border-radius:7px 7px 7px 7px; border-style: none;
+                padding:20px;
+            }
+            .mem3
+            {
+                transition: 1s;
+                font-family: fantasy;
+                font-size: 25;
+                color:white;
+                overflow:hidden;
+                border-color:cyan; border-style: solid; 
+                border-radius:7px 7px 7px 7px;
+                padding:20px;
+            }
+            .mem3:hover
+            {
+                transition: 1s;
+                font-family: fantasy;
+                font-size: 35;
+                color:black;
+                overflow:hidden;
+                background-color: #ff00cc;
+                border-radius:7px 7px 7px 7px; border-style: none;
+                padding:20px;
+            }
+        </style>
+    </head>
+    <body background="../images/cart_background.jpg" style="background-size: cover;" onload="typeWriter()">
+        <center>
+            <div class="tab">
+                <table cellspacing='10' cellpadding='10' border='0' width="100%" align='left'>
+                    <tr>
+                        <td><div style="display:inline;"><img src="..\images\user_default.jpg"  style="border-radius: 100%;" height="100px" width="100px"></div>					<!-- img path-->
+                            <div style="display:inline; font-family:Times New Roman; font-size: 50; color:back">OUR_GOAL</div>
+                        </td>
+                    </tr>
+                    <tr  colspan="3">
+                        <td class="type_style" style="color:black;" rowspan="3">
+                            
+                            <font style="font-size: 22px;"><p id="type_here"></p> </font>
+                        </td>
+                        <td class='mem1' onmouseover="disp_role(1)">
+                            <p id="id1">Chandan Singh</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class='mem2' onmouseover="disp_role(2)">
+                            <p id="id2">Pravleen Singh</p>
+                        </td>
+                    </tr>
+                    <tr>
+                            <td class='mem3' onmouseover="disp_role(3)">
+                                <p id="id3">Harish Unnikrishan</p>
+                            </td>
+                        </tr>
+                </table>
+            </div>
+        </center>
+    </body>
+</html>

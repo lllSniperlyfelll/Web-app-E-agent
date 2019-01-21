@@ -1,0 +1,292 @@
+<html>
+<head>
+<link rel='stylesheet' href="css/bootstrap.css">
+            <link rel='stylesheet' href="reset.css">
+            <script src="jquery.js"></script>
+
+         
+        <style>
+          
+            #majordiv
+            {
+                bottom:0px;
+                left: 0px;
+                background-color: aquamarine;
+                width:100%;
+                height:100%;
+                
+            }
+            .maindivstyle
+            {
+                border-radius: 20px;
+                border:none;
+                top:0;
+                bottom:0; 
+                height: 400px;
+                width: 100%;
+                /*background-color: rgba(185, 171, 171, 0.3);*/
+                background-color: rgba(0,0,0,0.2);
+                object-fit: cover;
+                z-index: 10000;
+            }
+            .maindivstyle1
+            {
+                top:0;
+                bottom:0; 
+                height: 200px;
+                width: 100%;
+                background-color: rgba(0,0,0,0.3);
+                /*background-color: rgba(185, 171, 171, 0.3);*/
+                object-fit: cover;
+                z-index: 100;
+            }
+            
+                        
+            .sidenav
+            {
+            height:500px;
+            width:0;
+            position:fixed;
+            z-index:10000;
+            top:92px;
+            left:0;
+            background-color:#6a6a6a;
+            overflow-x:hidden;
+            box-shadow: 0 4px 8px (0,0,0,0.2);
+            padding-top:60px;
+            transition:0.3s;
+            }
+
+            .sidenav a{
+            padding: 8px 8px 8px 32px;
+            text-decoration:none;
+            font-size:25;
+            color:white;
+            display:block;
+            transition:0.3s;
+            }
+
+            .sidenav .closebtn
+            {
+            position:absolute;
+            top:0;
+            left:25px;
+            font-size:36px;
+            margin-right:50px;
+            }
+            .menulinks
+                {
+                    color:#b6b6b6;
+                }
+                .menulinks:hover
+                {
+                    color:#2196f3;
+                    font-size: 39px;
+                }
+                .submitbtn
+            {
+                background-color: transparent;
+                background-image: url('../images/menu_button.png ') ;
+                background-size:100%; 
+                width: 50px;
+                height: 50px;
+                border: 0px;
+                border-radius: 100%;
+                transition: 0.3s;
+            }
+            .descbtnstyle
+        {
+            border:0px;
+            padding:10px 30px;
+            font-size: 15px;
+            border-radius: 5px;
+            color: whitesmoke;
+            font-family: elephant;
+            background-image: linear-gradient(to bottom,#3232ff,#8DEEEE);
+            /*background-image: linear-gradient(to right,#00BFFF,#8DEEEE);*/
+        }
+        .maindiv
+        {
+            background-image: linear-gradient(to right,#4c4cff,#8DEEEE);
+            border-radius: 20px;
+                border:none;
+            /*background-image: linear-gradient(to right,#d7d7d7,#e4e4e4);*/
+        }
+        .fontstyle
+        {
+            font-size: 15px;
+            color: white;
+            font-family: elephant;
+        }
+        .subfontstyle
+        {
+            font-size: 10px;
+            color: #d3d3d3;
+            font-family: elephant; 
+        }
+        .Rfontstyle
+        {
+            background: -webkit-linear-gradient(#ffff00,#ffd700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+            font-size: 15px;
+            
+            font-family: elephant;  
+        }
+
+        </style>
+          <script>
+
+                function opennav()
+                {
+                document.getElementById("mysidenav").style.width="200px";
+
+                }
+                
+                function closenav()
+                {
+                document.getElementById("mysidenav").style.width="0px";
+
+                }
+            </script>
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+<body>                         
+							<center>
+                                    <table border="1" style="margin-top:100px;margin-left: 30px ">
+						 <tr>
+                                                <td>
+                                                    <br><br><br><br><br>
+                                                        <div style="background-color: aquamarine;width: 800px;height:auto" class="maindiv" id="hoverdiv">
+                                                                <table border="10"style="text-align: center" >
+                                                                    <tr >
+                                                                        <td>
+                                                                            <img src="../images/flate1.jpg" style="height:230px;border-radius:20px; " width="390px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                        </td>
+                                                                        <td style="vertical-align: top">
+                                                                                <table border="1" style="margin-top:10px;" >
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                                <input type="Submit" value="Flats" class="descbtnstyle">
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td >
+                                                                                            <br>
+                                                                                            <br>
+                                                                                            <font class="fontstyle">NEW GOLDEN NEST Co-op SOCIETY</font><br>
+                                                                                            <font class="subfontstyle">Gb Road ,Manpada,Thane (w)</font>
+                                                                                            <br>
+                                                                                            <br>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                                <font class="Rfontstyle">Ratings</font><img src="../images/star-rating.png" width="70px" height="30px">
+                                                                                        </td>
+                                                                                        
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <br>
+                                                                                            <font class="subfontstyle">Price</font>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                        </td>
+                                                                    </tr>
+
+            
+                                                                </table>
+                                                            </div>
+                                                            <center> <table style="text-align: center;width:auto;" id="addtocartbtntable">
+                                                                <tr>
+                                                                    <td>
+                                                                          <form >
+                                                                           <button style= 'border-bottom-right-radius: 30px;border-radius: 30px; padding: 10px 150px;z-index:100000;border:none; background-image:linear-gradient(to right,aqua,#ff1d8e);color:white;font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif; outline:0;' value="imgl;nk" id="addtocartbtn1">Explore</button>
+                                                                        </form></td>
+                                                                </tr>
+                                                            </table>
+                                                        </center>
+
+                                            
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                    <td>
+                                                        <br><br><br><br><br>
+                                                            <div style="background-color: aquamarine;width: 800px;height:auto" class="maindiv" id="hoverdiv1">
+                                                                    <table border="10"style="text-align: center" >
+                                                                        <tr >
+                                                                            <td>
+                                                                                <img src="../images/flate1.jpg" style="height:230px;border-radius:20px; " width="390px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                            </td>
+                                                                            <td style="vertical-align: top">
+                                                                                    <table border="1" style="margin-top:10px;" >
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                    <input type="Submit" value="Flats" class="descbtnstyle">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td >
+                                                                                                <br>
+                                                                                                <br>
+                                                                                                <font class="fontstyle">NEW GOLDEN NEST Co-op SOCIETY</font><br>
+                                                                                                <font class="subfontstyle">Gb Road ,Manpada,Thane (w)</font>
+                                                                                                <br>
+                                                                                                <br>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                    <font class="Rfontstyle">Ratings</font><img src="../images/star-rating.png" width="70px" height="30px">
+                                                                                            </td>
+                                                                                            
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <br>
+                                                                                                <font class="subfontstyle">Price</font>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                            </td>
+                                                                        </tr>
+    
+                
+                                                                    </table>
+                                                                </div>
+                                                                <center> <table style="text-align: center;" id="addtocartbtntable">
+                                                                    <tr>
+                                                                        <td>
+                                                                          
+                                                                                <input type="submit" value="Add to cart" style= 'color:white;font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;  background-image:linear-gradient(to left,aqua,#ff1d8e);padding: 10px 150px;z-index:100000;border-bottom-left-radius: 30px;border-top-left-radius: 30px;border:none;' id="addtocartbtn"><input type="submit" style= 'border-bottom-right-radius: 30px;border-top-right-radius: 30px; padding: 10px 150px;z-index:100000;border:none; background-image:linear-gradient(to right,aqua,#ff1d8e);color:white;font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif; ' value="Explore" id="addtocartbtn">
+                                                                            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </center>
+    
+                                                
+                                                    </td>
+                                                </tr>
+                             
+                                           
+											</table>
+										</body>
+										</html>
